@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([A-Za-z0-9-_]+)/?$ $1.php [QSA]
+
+#Przekierowanie na bez WWW
+Options +FollowSymLinks
+RewriteCond %{HTTP_HOST} ^www.urovo.eu$ [NC]
+RewriteRule ^(.*)$ http://urovo.eu/$1 [R=301,L]
+
+#Przekierowanie na https
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://urovo.eu
