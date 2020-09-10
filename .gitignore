@@ -68,3 +68,5 @@ fastlane/test_output
 fastlane/readme.md
 
 composer.lock
+
+vendor/
