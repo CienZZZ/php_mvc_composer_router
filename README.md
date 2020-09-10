@@ -1,6 +1,6 @@
-Template project to works with PHP MVC ROUTER and Composer!
+## Template project to works with PHP MVC ROUTER and Composer!
 
-## Starting an application using this framework
+## How to use this framework:
 
 1. First, download the framework, either directly or by cloning the repo.
 1. Run **composer install** or **composer update** to install the project dependencies.
